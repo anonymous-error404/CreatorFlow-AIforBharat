@@ -10,30 +10,9 @@ The system uses mem0 for persistent AI memory to maintain creator identity acros
 
 The system follows a layered architecture with clear separation of concerns:
 
-```mermaid
-graph TB
-    UI[UI/UX Layer] --> Auth[Authentication Layer]
-    UI --> Learning[Learning & Personalization Layer]
-    UI --> Content[Content Generation Layer]
-    UI --> Room[Room Setup Assistant]
-    
-    Auth --> DB[Database Layer]
-    Learning --> Memory[AI Memory Layer - mem0]
-    Learning --> DB
-    
-    Content --> Memory
-    Content --> SEO[SEO Optimization Module]
-    Content --> Trends[Trends & Competitor Analysis]
-    
-    Room --> Camera[Live Camera Input]
-    
-    Publishing[Automated Publishing Layer - n8n] --> APIs[Social Media APIs]
-    Publishing --> Analysis[Post-Publish Analysis Layer]
-    
-    Content --> Publishing
-    Analysis --> Memory
-    Analysis --> DB
-```
+## System Architecture
+
+![CreatorFlow AI Architecture](./images/architecture.png)
 
 **Layer Responsibilities:**
 - **UI/UX Layer**: Creator interface for content review, approval, and system interaction
