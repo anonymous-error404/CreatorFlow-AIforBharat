@@ -12,7 +12,7 @@ The system follows a layered architecture with clear separation of concerns:
 
 ## System Architecture
 
-![CreatorFlow AI Architecture](./images/AIndians (3).png)
+![CreatorFlow AI Architecture](./images/AIndiansArchitecture.png)
 
 **Layer Responsibilities:**
 - **UI/UX Layer**: Creator interface for content review, approval, and system interaction
